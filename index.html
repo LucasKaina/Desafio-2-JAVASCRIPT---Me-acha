@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script  src="function.js"></script>
+    <title>Me acha</title>
+</head>
+<body>
+    <header id="cabecalho" class="flex">
+        <h1> ME ACHA! </h1>
+        <h5> ENCONTRE UM ENDEREÇO PELO NÚMERO DO CPF</h5>
+        <div id="icon" class="flex">
+            <span class="material-icons">
+                travel_explore
+                </span>
+        </div>
+    </header>
+<main>
+    <section id="formulario" class="flex">
+        <form method="get" name="cep">
+            <fieldset>
+                <label for="cep"> Cep </label>
+                <input type="text" class="num" id="NumeroCep" name="cep" value=""> 
+                <label for="rua"> Rua</label>
+                <input type="text" class="txt" id="logradouro" name="rua"  disabled value="">
+                <label for="bairro"> Bairro </label>
+                <input type="text" class="txt" id="bairro" name="bairro"  disabled value="">
+                <label for="cidade"> Cidade </label>
+                <input type="text" class="txt" id="localidade" name="cidade"   disabled value="">
+                <label for="estado"> Estado </label>
+                <input type="text" class="txt" id="uf" name="estado"  disabled value="">
+                
+                <input id="buscarCep" type="button" name="buscar" value="BUSCAR">
+                
+            </fieldset>   
+        </form>
+
+    </section>
+</main>
+</body>
+</html>
